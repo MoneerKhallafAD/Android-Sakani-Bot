@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/txtHeaderOptionItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:drawableStart="@drawable/ic_sp_arraw"
+        android:background="@drawable/bg_sp"
+        android:fontFamily="@font/the_sans"
+        android:text="text"
+        android:textColor="#3C3C3C"
+        android:textSize="14sp" />
+
+</LinearLayout>

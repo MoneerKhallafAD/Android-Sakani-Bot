@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSDKPrimary">#00C4B3</color>
+    <color name="colorSDKPrimaryDark">#00C4B3</color>
+    <color name="colorSDKAccent">#D81B60</color>
+    <color name="dialogBG">#9A050000</color>
+</resources>

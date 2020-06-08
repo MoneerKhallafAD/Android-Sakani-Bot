@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:orientation="vertical">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/conData"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="50dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imgAvatar"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/ic_avater" />
+
+            <TextView
+                android:id="@+id/txtMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_ar_chatbotmessage"
+                android:fontFamily="@font/the_sans"
+                android:padding="10dp"
+                android:text="Hello, I am the virtual assistant of the Sakani Program. How can I help you with ?"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linAudioCon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="1dp"
+            android:background="@drawable/bg_audio_options"
+            app:layout_constraintEnd_toEndOf="@+id/top_view"
+            app:layout_constraintTop_toBottomOf="@id/top_view">
+
+
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/avAudioLoading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                app:indicatorColor="@android:color/black"
+                app:indicatorName="BallPulseIndicator" />
+
+            <LinearLayout
+                android:id="@+id/linAudioOptions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <ImageButton
+                    android:id="@+id/btnPlay"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_play" />
+
+                <TextView
+                    android:id="@+id/txtAudioDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_chatbot_message"
+                    android:fontFamily="@font/the_sans"
+                    android:text="0:04/0:04"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="5dp"
+                    android:textColor="#3C3C3C"
+                    android:textSize="9sp" />
+
+
+                <ProgressBar
+                    android:id="@+id/prgBarTime"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:progress="0"
+                    android:progressBackgroundTint="#3C3C3C"
+                    android:progressTint="#3C3C3C" />
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/btnShowAudio"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_volume" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <TextView
+        android:id="@+id/txtTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conData"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="20dp"
+        android:fontFamily="@font/the_sans"
+        android:text="7:20 PM"
+        android:textColor="#3C3C3C"
+        android:textSize="9sp" />
+
+
+
+</RelativeLayout>

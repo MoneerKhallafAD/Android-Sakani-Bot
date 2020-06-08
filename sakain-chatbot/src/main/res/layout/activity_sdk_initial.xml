@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="60dp"
+                    android:src="@drawable/ic_avater" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25sp"
+                    android:text="حياك الله … Welcome you"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/the_sans" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:text="أحمد المساعد الالكتروني من برنامج سكني"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/the_sans" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="17sp"
+                    android:text="The Chatbot assistant from Sakani"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/the_sans" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linProducts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_home_border"
+                android:layout_marginTop="280dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+                
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/main_image"/>
+
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:textSize="13sp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:text="الحلول السكنية: حلول برنامج سكني اليوم أصبحت أكثر وإجراءات الحصول عليها أصبحت أسهل. اكتشف العديد من المنتجات و الحلول السكنية المتنوعة"
+                    android:textColor="#3C3C3C"
+                    android:fontFamily="@font/the_sans" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/the_sans"
+                    android:textColor="@color/colorPrimary"
+                    android:text="إعرض المنتجات"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/bg_btn_border"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linProducts"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="40dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartAr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/the_sans"
+                    android:layout_marginEnd="7dp"
+                    android:textColor="@android:color/white"
+                    android:text="بدأ المحادثة"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/colorPrimary"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btnStartEn"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/the_sans"
+                    android:textColor="@android:color/white"
+                    android:text="Let’s talk"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@color/colorPrimary"/>
+
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>

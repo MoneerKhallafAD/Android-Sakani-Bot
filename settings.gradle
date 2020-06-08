@@ -1,0 +1,3 @@
+include ':app', ':sakain-chatbot'
+
+rootProject.name='My Application'
