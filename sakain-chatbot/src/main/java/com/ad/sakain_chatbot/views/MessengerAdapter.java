@@ -176,7 +176,7 @@ public class MessengerAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHol
 
         @Override
         public void onClick(View view) {
-            Toast.makeText(view.getContext(), "position : " + getLayoutPosition() + " text : " + this.txtMessage.getText(), Toast.LENGTH_SHORT).show();
+//            Toast.makeText(view.getContext(), "position : " + getLayoutPosition() + " text : " + this.txtMessage.getText(), Toast.LENGTH_SHORT).show();
         }
 
         private void initiatePlayer(File file) {
@@ -257,7 +257,7 @@ public class MessengerAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHol
 
         @Override
         public void onClick(View view) {
-            Toast.makeText(view.getContext(), "position : " + getLayoutPosition() + " text : " + this.txtMessage.getText(), Toast.LENGTH_SHORT).show();
+//            Toast.makeText(view.getContext(), "position : " + getLayoutPosition() + " text : " + this.txtMessage.getText(), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -300,7 +300,7 @@ public class MessengerAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHol
 
         @Override
         public void onClick(View view) {
-            Toast.makeText(view.getContext(), "position : " + getLayoutPosition() + " text : " + this.txtMessage.getText(), Toast.LENGTH_SHORT).show();
+//            Toast.makeText(view.getContext(), "position : " + getLayoutPosition() + " text : " + this.txtMessage.getText(), Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -346,7 +346,7 @@ public class MessengerAdapter  extends RecyclerView.Adapter<RecyclerView.ViewHol
 
         @Override
         public void onClick(View view) {
-            Toast.makeText(view.getContext(), "position : " + getLayoutPosition() + " text : " + this.txtMessage.getText(), Toast.LENGTH_SHORT).show();
+//            Toast.makeText(view.getContext(), "position : " + getLayoutPosition() + " text : " + this.txtMessage.getText(), Toast.LENGTH_SHORT).show();
         }
     }
 }
